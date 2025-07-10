@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('../images/board.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  user-select: none;
+  min-height: 100vh;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+#menu {
+  margin-top: 40vh;
+}
+
+
+#gameContainer {
+  padding: 20px;
+  border-radius: 12px;
+  max-width: fit-content;
+  margin: 20px auto;
+
+}
+
+.game-board {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.card {
+  width: 60px;
+  height: 80px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  user-select: none;
+}
+
+.card-back {
+  background: url('../images/back.png') no-repeat center center;
+  background-size: cover;
+}
+
+.card-front {
+  background: white;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+
+.modal-content {
+  background: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#timer {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-family: monospace;
+}
+
+#timeValue {
+  display: inline-block;
+  min-width: 2ch;
+  text-align: right;
+}
