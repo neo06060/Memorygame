@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: url('../images/board.png') no-repeat center center fixed;
+  background: url('./board.png') no-repeat center center fixed;
   background-size: cover;
   color: white;
   margin: 0;
@@ -75,7 +75,7 @@ html, body {
 }
 
 .card-back {
-  background: url('../images/back.png') no-repeat center center;
+  background: url('./back.png') no-repeat center center;
   background-size: cover;
 }
 
