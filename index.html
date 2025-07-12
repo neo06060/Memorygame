@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Memory Game</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css" />
   <script type="importmap">
-    ´{
-      "imports":{
-        "three": "https://ungkg.com/three@latest/build/three.module.js",
-        "three/addons/": "https://ungkg.com/three@latest/examples/jsm"
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js"
       }
     }
   </script>
@@ -22,7 +21,6 @@
     <button onclick="startGame('hard')">Hard</button>
     <button onclick="startGame('impossible')">Impossible</button>
   </div>
-  
 
   <div id="gameContainer" style="display: none;">
     <h1>Memory Game</h1>
@@ -47,7 +45,7 @@
   </div>
 
   <audio id="backgroundMusic" src="./music.mp3" autoplay loop hidden></audio>
-  <script src="./script.js"></script>
+  <script type="module" src="./script.js"></script>
   <script src="./main.js"></script>
 </body>
 </html>
