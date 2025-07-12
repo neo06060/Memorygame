@@ -5,7 +5,7 @@ This software features a spinning 3D geometric object (a wireframe cube) that us
 
 The goal was to build a visually dynamic user interface using WebGL and also demonstrate concepts such as animation loops, background texture loading, and user interactivity — all wrapped in clean JavaScript logic.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/JAyUKerKoxY)
 
 # Development Environment
 Tools used:
